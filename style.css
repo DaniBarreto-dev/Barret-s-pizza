@@ -1,4 +1,49 @@
-body{
-    background: linear-gradient(135deg, #e9a530, #621d00);
-     height: 100vh;
+body {
+    background: var(--cor-de-fundo); /* Define a cor de fundo */
+}
+
+/*Modo de Cor*/
+:root {
+    --cor-de-fundo: linear-gradient(135deg, #e9a530, #621d00);
+    --cor-primaria: #000;
+    --cor-tercearia: #3b1b08;
+    --cor-quartenaria: #542a10;
+    --cor-quintenaria: #e48f3d;
+    --cor-fonte1: #240f02;
+    --cor-fonte2: #ecc98c;
+}
+
+/*Navbar*/
+
+header {
+    background-color: var(--cor-quartenaria);
+    padding: 1rem 2rem;
+    position: fixed;
+    /* Fixa o header no topo */
+    top: 0;
+    left: 0;
+    /* Garante que o header comece do canto esquerdo */
+    width: 100vw;
+    /* Ocupa toda a largura da tela */
+    z-index: 1000;
+    /* Mantém o header acima dos outros elementos */
+}
+
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    list-style: none;
+    padding-right: 30%;
+
+}
+
+header ul li a {
+    text-align: right;
+    text-decoration: none; /* Remove a decoração de texto */
+    color: var(--cor-fonte2); /* Define a cor do texto como branca */
+    font-family: 'Gliker', sans regular;
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 29px; /* Aumenta o tamanho da fonte */
 }
