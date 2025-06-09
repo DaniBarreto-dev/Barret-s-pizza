@@ -1,6 +1,33 @@
-body {
-    background: var(--cor-de-fundo); /* Define a cor de fundo */
-}
+
+    body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #e9a530, #621d00);
+    background-size: 400% 400%; /* Expande o gradiente para criar um efeito suave */
+    animation: moverGradiente 8s infinite alternate; /* Define a animação */
+    }
+
+    @keyframes moverGradiente {
+    0% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    }
+
+            .container {
+            width: 100vw; /* largura total da tela */
+            height: 100vh; /* altura total da tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container img {
+            width: 400%; /* ajuste o tamanho da imagem conforme necessário */
+        }
 
 /*Modo de Cor*/
 :root {
